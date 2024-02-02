@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "serverless": "^3.38.0",
+    "serverless-plugin-resource-tagging": "^1.2.0"
+  }
+}
