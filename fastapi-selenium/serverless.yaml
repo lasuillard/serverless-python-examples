@@ -1,4 +1,4 @@
-service: serverless-python-examples-selenium
+service: fastapi-selenium
 
 frameworkVersion: "3"
 

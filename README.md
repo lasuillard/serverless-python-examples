@@ -39,7 +39,7 @@ Default output format [None]:
 Move to the app and deploy:
 
 ```bash
-$ cd playwright
+$ cd fastapi-playwright
 $ sls deploy
 (node:400182) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
