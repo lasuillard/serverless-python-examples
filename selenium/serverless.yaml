@@ -1,0 +1,30 @@
+service: serverless-python-examples-selenium
+
+frameworkVersion: "3"
+
+provider:
+  # https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml
+  name: aws
+  stage: ${opt:stage, "dev"}
+  profile: serverless-python-examples
+  region: ${env:AWS_REGION, "us-east-1"}
+  ecr:
+    images:
+      app:
+        path: ./
+        platform: linux/amd64
+  stackTags:
+    Project: serverless-python-examples
+    Application: fastapi-selenium
+    Environment: dev
+    Managed-By: serverless
+functions:
+  app:
+    image:
+      name: app
+    url: true
+    memorySize: 2048
+    timeout: 60
+
+plugins:
+  - serverless-plugin-resource-tagging

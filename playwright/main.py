@@ -17,7 +17,7 @@ def root(url: str = "http://example.com") -> str:
         page.goto(url)
         print("Page loaded")
         title = page.title()
-        print("Title: ", title)
+        print("Title:", title)
         browser.close()
         print("Browser closed")
 
