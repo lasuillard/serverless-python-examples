@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright/python:v1.41.1-jammy as build-image
+FROM mcr.microsoft.com/playwright/python:v1.41.1-jammy
 
 ARG FUNCTION_DIR="/function"
 
