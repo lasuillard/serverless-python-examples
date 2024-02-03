@@ -96,3 +96,4 @@ Delete the IAM if you created one, and no need anymore.
 ## References
 
 - https://www.cloudtechsimplified.com/playwright-aws-lambda-python/
+- https://github.com/umihico/docker-selenium-lambda
