@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright/python:v1.41.1-jammy as build-image
+FROM python:3.12-bookworm
 
 RUN apt-get update && apt-get install -y \
     curl \
