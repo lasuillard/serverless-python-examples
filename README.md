@@ -1,13 +1,13 @@
-# serverless-fastapi-playwright
+# serverless-python-examples
 
-Example deploying Playwright FastAPI application to AWS Lambda.
+Examples deploying Python applications using serverless framework.
 
 ## Quick Start
 
 Clone the repository:
 
 ```bash
-$ git clone https://github.com/lasuillard/serverless-fastapi-playwright
+$ git clone https://github.com/lasuillard/serverless-python-examples
 ```
 
 Install the project deps (npm) for [serverless](https://www.serverless.com/) CLI and plugins:
@@ -26,33 +26,34 @@ Create an access key for your IAM. I recommend creating an IAM and giving approp
 - CloudWatchLogsFullAccess
 - IAMFullAccess
 
-Then configure the profile **serverless-fastapi-playwright**. Region is not necessarily to be **us-east-1**, choose what you want.
+Then configure the profile **serverless-python-examples**. Region is not necessarily to be **us-east-1**, choose what you want.
 
 ```bash
-$ aws configure --profile serverless-fastapi-playwright
+$ aws configure --profile serverless-python-examples
 AWS Access Key ID [None]: XXXXXXXXXXXXXXXXXXXX
 AWS Secret Access Key [None]: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Default region name [None]: us-east-1
 Default output format [None]:
 ```
 
-Deploy the app:
+Move to the app and deploy:
 
 ```bash
+$ cd playwright
 $ sls deploy
 (node:400182) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 
-Deploying serverless-fastapi-playwright to stage dev (us-east-1)
+Deploying serverless-python-examples to stage dev (us-east-1)
 Updated AWS resource tags..
 Updated AWS resource tags..
 Updated APIGateway resource tags..
 
-✔ Service deployed to stack serverless-fastapi-playwright-dev (289s)
+✔ Service deployed to stack serverless-python-examples-dev (289s)
 
 endpoint: https://35fg4ihpurh2jfkoo6luv74etu0drsry.lambda-url.us-east-1.on.aws/
 functions:
-  app: serverless-fastapi-playwright-dev-app
+  app: serverless-python-examples-dev-app
 
 Need a faster logging experience than CloudWatch? Try our Dev Mode in Console: run "serverless dev"
 ```
@@ -88,7 +89,7 @@ $ sls remove
 
 It will remove all the resources created by CLI.
 
-As AWS CLI does not provide removing profile you should edit **~/.aws/credentials** file and remove the **serverless-fastapi-playwright** profile manually.
+As AWS CLI does not provide removing profile you should edit **~/.aws/credentials** file and remove the **serverless-python-examples** profile manually.
 
 Delete the IAM if you created one, and no need anymore.
 

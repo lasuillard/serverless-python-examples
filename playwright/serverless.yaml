@@ -1,11 +1,12 @@
-service: serverless-fastapi-playwright
+service: fastapi-playwright
 
 frameworkVersion: "3"
 
 provider:
+  # https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml
   name: aws
   stage: ${opt:stage, "dev"}
-  profile: serverless-fastapi-playwright
+  profile: serverless-python-examples
   region: ${env:AWS_REGION, "us-east-1"}
   ecr:
     images:
@@ -13,9 +14,9 @@ provider:
         path: ./
         platform: linux/amd64
   stackTags:
-    Application: serverless-fastapi-playwright
+    Project: serverless-python-examples
+    Application: fastapi-playwright
     Environment: dev
-
     Managed-By: serverless
 functions:
   app:
