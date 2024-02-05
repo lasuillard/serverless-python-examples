@@ -4,10 +4,10 @@ ARG FUNCTION_DIR="/function"
 
 WORKDIR "${FUNCTION_DIR}"
 
-RUN pip install --no-cache awslambdaric
+RUN pip install --no-cache-dir awslambdaric
 
 COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
