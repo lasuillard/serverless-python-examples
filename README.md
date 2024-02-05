@@ -2,7 +2,7 @@
 
 Examples deploying Python applications using serverless framework.
 
-## Quick Start
+## 👟 Quick Start
 
 Clone the repository:
 
@@ -36,7 +36,17 @@ Default region name [None]: us-east-1
 Default output format [None]:
 ```
 
-Move to the app and deploy:
+List of examples currently available:
+
+- fastapi-playwright
+
+  Example app with FastAPI and Playwright installed.
+
+- fastapi-selenium
+
+  Example app with FastAPI and Selenium, with Google Chrome and ChromeDriver installed (via [Chrome for Testing](https://github.com/GoogleChromeLabs/chrome-for-testing)).
+
+Run following to deploy:
 
 ```bash
 $ cd fastapi-playwright
@@ -62,7 +72,7 @@ serverless will take care of creating all necessary resources: S3 bucket, ECR re
 
 Copy the endpoint URL (https://35fg4ihpurh2jfkoo6luv74etu0drsry.lambda-url.us-east-1.on.aws/ above) for later testing.
 
-## Testing
+## 🧪 Testing
 
 Once deployed, CLI will show the URL of Lambda endpoint. Access the root URL with query parameter `url`, for example:
 
@@ -79,7 +89,7 @@ To see logs, run:
 $ sls logs --function app --tail
 ```
 
-## Cleanup Resources
+## 🧹 Cleanup Resources
 
 Remove resources created by serverless:
 
@@ -93,7 +103,7 @@ As AWS CLI does not provide removing profile you should edit **~/.aws/credential
 
 Delete the IAM if you created one, and no need anymore.
 
-## References
+## 🖇️ References
 
 - https://www.cloudtechsimplified.com/playwright-aws-lambda-python/
 - https://github.com/umihico/docker-selenium-lambda
