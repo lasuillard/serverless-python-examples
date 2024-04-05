@@ -1,5 +1,7 @@
 # serverless-python-examples
 
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/lasuillard/serverless-python-examples/main.svg)](https://results.pre-commit.ci/latest/github/lasuillard/serverless-python-examples/main)
+
 Examples deploying Python applications using serverless framework.
 
 ## 👟 Quick Start
