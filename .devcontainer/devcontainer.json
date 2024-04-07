@@ -6,7 +6,6 @@
         "ghcr.io/devcontainers-contrib/features/serverless:2": {}
     },
     "onCreateCommand": "./.devcontainer/onCreateCommand.sh",
-    "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
 	"postAttachCommand": "pre-commit install",
     "customizations": {
         "vscode": {
