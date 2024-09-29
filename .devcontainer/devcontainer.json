@@ -5,7 +5,6 @@
         "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
         "ghcr.io/devcontainers-contrib/features/serverless:2": {}
     },
-    "onCreateCommand": "./.devcontainer/onCreateCommand.sh",
 	"postAttachCommand": "pre-commit install",
     "customizations": {
         "vscode": {
