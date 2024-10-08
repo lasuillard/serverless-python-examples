@@ -9,7 +9,3 @@ repos:
     rev: v0.6.9
     hooks:
       - id: ruff-format
-
-ci:
-  autofix_prs: true
-  autoupdate_schedule: quarterly
